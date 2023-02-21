@@ -34,7 +34,6 @@ def extract_citizens(filename, file_path):
     with open(file_path + filename, 'r') as fd:
         reader = csv.reader(fd, delimiter=',')
         next(reader)  # skip first line
-        # print(reader)
         for row in reader:
             # print(row)
             new_dict = {
@@ -60,7 +59,6 @@ def extract_lendings(filename, file_path):
     with open(file_path + filename, 'r') as fd:
         reader = csv.reader(fd, delimiter=';', quotechar='"')
         next(reader)  # skip first line
-        # print(reader)
         actId = 1
         for row in reader:
             # print("lendings: ", row)
@@ -211,12 +209,12 @@ def ausleihschein(citizens, lendings, items):
                     # first filter item_lendings for item_lendings with same lending_id
                     filtered_item_ids = list(filter(
                         lambda il: il["lending_id"] == lending["id"], item_lendings))
-                   # print("AARRRR", filtered_item_ids)
+                   # print("filtered", filtered_item_ids)
 
                     # second map only ids to a new array
                     already_imported_item_ids = list(map(
                         lambda il: il["item_id"], filtered_item_ids))
-                    # print("already imp", already_imported_item_ids)
+                    # print("mapped", already_imported_item_ids)
 
                     # hashtag referential integrity!!
                     # check if item id has already been used in this lending
