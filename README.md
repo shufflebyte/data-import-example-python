@@ -36,8 +36,8 @@ _TLDR: Die Pyhton-File liest die Daten der Tabellen ein und baut daraus [Diction
 ### Selbst ausprobieren
 
 1. `sql_code.txt` Datei löschen oder leeren.
-2. main.py ausführen
-3. Falls Tabellen zuvor schon einmal befüllt waren, TRUNCATE anwenden und Auto Increment-Value von `Ausleihschein` auf 1 zurücksetzen.
+2. `main.py` ausführen
+3. Falls Tabellen zuvor schon einmal befüllt waren, `TRUNCATE` anwenden und Auto Increment-Value von `Ausleihschein` auf 1 zurücksetzen.
 
 ```sql
 TRUNCATE [TABLE] table_name;
