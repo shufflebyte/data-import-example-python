@@ -6,8 +6,13 @@ In diesem Repository könnt ihr ein Beispielprogramm in Python zum Datenimport v
 
 Wir haben die Kundendatenbank geplant und das Modell bereits mit der MySQL-Workbench erstellt. Die Gegenstände und Mitarbeiter/Bewohner sind bereits erfasst. Die Tabellen `Ausleihschein` und `Gegenstand_has_Ausleischein` sind noch zu befüllen. Der Kunde hat uns eine Excel-Tabelle mit den entsprechenden Daten zur Verfügung gestellt.
 
+![alt text](https://github.com/shufflebyte/data-import-example-python/blob/master/misc/musterl%C3%B6sung.png?raw=true)
+Abb 1: Unser Datenmodell
+
 # Vorgehen
 
 ## Spalten den Tabellen unseres Modells zuordnen
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/shufflebyte/data-import-example-python/blob/master/misc/daten.jpeg?raw=true)
+
+<img src="https://github.com/shufflebyte/data-import-example-python/blob/master/misc/daten.jpeg?raw=true" width="350" title="hover text">
